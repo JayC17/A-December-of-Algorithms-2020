@@ -1,0 +1,9 @@
+x=input("Room:")
+y=str((int(x))**2)
+if int(x)%3==0:
+	if int(y[:len(y)//2])+int(y[len(y)//2:])==int(x):
+		print("Status: Safe")
+	else:
+		print("Status: Not Safe")
+else: 
+    print("Status: Not Safe")
